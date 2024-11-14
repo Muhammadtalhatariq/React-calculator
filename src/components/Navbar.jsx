@@ -32,18 +32,18 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 <li>
-                  <a className="font-bold">home </a>
+                  <a href="#" className="font-medium hover:font-bold ">Home </a>
                 </li>
                 <li>
-                  <a className="font-medium" href="">
-                    fitness & health
+                  <a className="font-medium hover:font-bold" href="#">
+                    Fitness & Health
                   </a>
                 </li>
                 <li>
-                  <a className="font-medium"> calorie calculator</a>
+                  <a href="#" className="font-medium hover:font-bold"> Calorie Calculator</a>
                 </li>
                 <li>
-                  <a className="font-medium" href="">
+                  <a href="#" className="font-medium hover:font-bold" >
                     Other
                   </a>
                 </li>
@@ -53,26 +53,26 @@ const Navbar = () => {
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
-              <li>
-                <a className="font-bold">home </a>
-              </li>
-              <li>
-                <a className="font-medium" href="#">
-                  fitness & health
-                </a>
-              </li>
-              <li>
-                <a className="font-medium"> calorie calculator</a>
-              </li>
-              <li>
-                <a className="font-medium" href="">
-                  Other
-                </a>
-              </li>
+            <li>
+                  <a href="#" className="font-medium hover:font-bold ">Home </a>
+                </li>
+                <li>
+                  <a className="font-medium hover:font-bold" href="#">
+                    Fitness & Health
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="font-medium hover:font-bold"> Calorie Calculator</a>
+                </li>
+                <li>
+                  <a href="#" className="font-medium hover:font-bold" >
+                    Other
+                  </a>
+                </li>
             </ul>
           </div>
           <div className="navbar-end cursor-pointer">
-            <a className=" bg-button text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]">
+            <a href="#" className=" bg-button text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]">
               Get Start
             </a>
           </div>

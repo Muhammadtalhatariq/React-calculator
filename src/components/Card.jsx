@@ -4,42 +4,42 @@ const cart = [
   {
     id: 1,
     title: "BMI Calculator",
-    image: "/bmi.png",
+    image: "/bmi.svg",
   },
   {
     id: 2,
     title: "Body Fat Calculator",
-    image: "/body.png",
+    image: "/body.svg",
   },
   {
     id: 3,
     title: "BMR Calculator",
-    image: "/bmr.png",
+    image: "/bmr.svg",
   },
   {
     id: 4,
     title: "Ideal Weight Calculator",
-    image: "/ideal.png",
+    image: "/ideal.svg",
   },
   {
     id: 5,
     title: "Pace Calculator",
-    image: "/pace.png",
+    image: "/pace.svg",
   },
   {
     id: 6,
     title: "Pregnancy Calculator",
-    image: "/pregnancey.png",
+    image: "/pragnencey.svg",
   },
   {
     id: 7,
     title: "Conception Calculator",
-    image: "/conception.png",
+    image: "/consevtion.svg",
   },
   {
     id: 8,
     title: "Due Date Calculator",
-    image: "/duedate.png",
+    image: "/duedate.svg",
   },
 ];
 
@@ -59,7 +59,7 @@ const Card = () => {
               >
                 <div className="flex flex-col justify-center items-center">
                   <div className="relative flex justify-center items-center ">
-                    <div className=" absolute -top-8  w-20 h-20 rounded-full bg-iconcol flex justify-center items-center">
+                    <div className=" absolute -top-8  w-20 h-20 rounded-full bg-iconcol border-2 border-fborder flex justify-center items-center">
                       <div className="">
                         <img className="" src={item.image} alt="" />
                       </div>

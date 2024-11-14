@@ -4,7 +4,7 @@ const Calculator = () => {
   const [age, setage] = useState(18);
   const [Weight, setWeight] = useState(40);
   const [Height, setHeight] = useState(140);
-  const [activity, setactivity] = useState("Moderate exercise 4-5 times/week");
+  const [activity, setactivity] = useState("Moderate Exercise 4-5 Times/Week");
   const [genter, setgenter] = useState("male");
   const [data, setdata] = useState({});
 
@@ -41,7 +41,7 @@ const Calculator = () => {
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Age</span>{" "}
                         <div>
-                          <span className="text-button">{age}</span>/80{" "}
+                          <span className="text-button">{age}</span> /<span className="text-buttonsec">80</span>{" "}
                         </div>
                       </div>
                       <input
@@ -56,14 +56,14 @@ const Calculator = () => {
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
                         {" "}
-                        <p>18</p> <p>80</p>
+                        <p className="text-buttonsec">18</p> <p className="text-buttonsec">80</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black mx-3 pt-8 ">
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Weight</span>{" "}
                         <div>
-                          <span className="text-button">{Weight}</span>/150{" "}
+                          <span className="text-button">{Weight}</span>/<span className="text-buttonsec">150</span>{" "}
                         </div>
                       </div>
                       <input
@@ -77,14 +77,14 @@ const Calculator = () => {
                         }}
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
-                        <p>40</p> <p>150</p>
+                        <p className="text-buttonsec">40</p> <p className="text-buttonsec">150</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black m-3">
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Height</span>{" "}
                         <div>
-                          <span className="text-button">{Height}</span>/220{" "}
+                          <span className="text-button">{Height}</span>/<span className="text-buttonsec">220</span>{" "}
                         </div>
                       </div>
                       <input
@@ -99,14 +99,14 @@ const Calculator = () => {
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
                         {" "}
-                        <p>140</p> <p>220</p>
+                        <p className="text-buttonsec">140</p> <p className="text-buttonsec">220</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black m-3">
                       <div className="flex  flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
                         <select
-                          className=" rounded-full shadow-xl bg-base-100 outline-none p-2 md:w-72 px-3"
+                          className=" rounded-full shadow-xl bg-base-100 outline-none  md:w-72 p-3 font-semibold "
                           name=""
                           id=""
                         >
@@ -115,9 +115,9 @@ const Calculator = () => {
                             onChange={(e) => {
                               setactivity(e.target.value);
                             }}
-                            className=" rounded-full shadow-xl bg-base-100 outline-none"
+                            className=" rounded-full shadow-2xl bg-base-100 outline-none p-2 font-semibold"
                           >
-                            Moderate exercise 4-5 times/week
+                            Moderate Exercise 4-5 Times/Week
                           </option>
                         </select>
                       </div>
@@ -130,8 +130,8 @@ const Calculator = () => {
 
                         <div className="flex ">
                           <div className="">
-                            <label className="label cursor-pointer">
-                              <span className="label-text">Male</span>
+                            <label className="label cursor-pointer gap-2">
+                             
                               <input
                                 value={genter}
                                 onChange={(e) => {
@@ -139,28 +139,30 @@ const Calculator = () => {
                                 }}
                                 type="radio"
                                 name="radio-10"
-                                className="radio checked:bg-button"
+                                className="  bg-button"
                                 defaultChecked
                               />
+                               <span className="label-text">Male</span>
                             </label>
                           </div>
                           <div className="">
-                            <label className="label cursor-pointer">
+                            <label className="label cursor-pointer gap-2">
+                              
+                              <input
+                                value={genter}
+                                onChange={(e) => {
+                                  setgenter(e.target.value);
+                                }}
+                                type="radio"
+                                name="radio-10"
+                                className=" checked:bg-button"
+                              />
                               <span className="label-text">Female</span>
-                              <input
-                                value={genter}
-                                onChange={(e) => {
-                                  setgenter(e.target.value);
-                                }}
-                                type="radio"
-                                name="radio-10"
-                                className="radio checked:bg-button"
-                              />
                             </label>
                           </div>
                           <div className="">
-                            <label className="label cursor-pointer">
-                              <span className="label-text">Other</span>
+                            <label className="label cursor-pointer gap-2">
+                             
                               <input
                                 value={genter}
                                 onChange={(e) => {
@@ -168,8 +170,9 @@ const Calculator = () => {
                                 }}
                                 type="radio"
                                 name="radio-10"
-                                className="radio checked:bg-button"
+                                className=" checked:bg-button"
                               />
+                               <span className="label-text"> Other</span>
                             </label>
                           </div>
                         </div>
@@ -193,7 +196,7 @@ const Calculator = () => {
                       <h1>Exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                         <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
-                          <img src="/form-icon.png" alt="" />
+                          <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
                           <p>15-30 minutes of elevated heart rate activity.</p>
@@ -204,7 +207,7 @@ const Calculator = () => {
                       <h1>Intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                         <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
-                          <img src="/form-icon.png" alt="" />
+                          <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
                           <p>45-120 minutes of elevated heart rate activity.</p>
@@ -215,7 +218,7 @@ const Calculator = () => {
                       <h1>Very intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                         <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
-                          <img src="/form-icon.png" alt="" />
+                          <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
                           <p> 2+ hours of elevated heart rate activity.</p>

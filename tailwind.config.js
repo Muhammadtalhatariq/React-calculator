@@ -8,6 +8,7 @@ export default {
     extend: {
       colors : {
         border : "#DCDCDC",
+        fborder : "#E86C004D 30%" ,
         button : "#4A9500",
         buttonsec :"#22222280",
         footer : " #404040",
