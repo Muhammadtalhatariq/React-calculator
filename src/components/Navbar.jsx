@@ -1,7 +1,7 @@
 import React from "react";
 
 const Navbar = () => {
-  
+
   return (
     <>
       <div className="backdrop-opacity-30 backdrop-invert bg-footer/80  ">
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-2xl font-bold">Logo Here</a>
+            <a className=" text-2xl font-bold cursor-pointer">Logo Here</a>
           </div>
           <div className=" hidden lg:flex">
             <ul className=" flex justify-between items-center gap-8 px-1">
