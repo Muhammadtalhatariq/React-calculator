@@ -9,7 +9,7 @@ body {
 }
 
 .range {
-    height: 10px /* 24px */;
+    height: 10px;
     width: 100%;
     cursor: pointer;
     appearance: none;

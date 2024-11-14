@@ -23,7 +23,7 @@ const Calculator = () => {
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Us Units
               </li>
-              <li className="text-button font-bold leading-6 cursor-pointer">
+              <li className="text-buttonb font-bold leading-6 cursor-pointer">
                 Metric Units
               </li>
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
@@ -41,7 +41,7 @@ const Calculator = () => {
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Age</span>{" "}
                         <div>
-                          <span className="text-button">{age}</span> /<span className="text-buttonsec">80</span>{" "}
+                          <span className="text-buttonb">{age}</span> /<span className="text-buttonsec">80</span>{" "}
                         </div>
                       </div>
                       <input
@@ -63,7 +63,7 @@ const Calculator = () => {
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Weight</span>{" "}
                         <div>
-                          <span className="text-button">{Weight}</span>/<span className="text-buttonsec">150</span>{" "}
+                          <span className="text-buttonb">{Weight}</span>/<span className="text-buttonsec">150</span>{" "}
                         </div>
                       </div>
                       <input
@@ -84,7 +84,7 @@ const Calculator = () => {
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Height</span>{" "}
                         <div>
-                          <span className="text-button">{Height}</span>/<span className="text-buttonsec">220</span>{" "}
+                          <span className="text-buttonb">{Height}</span>/<span className="text-buttonsec">220</span>{" "}
                         </div>
                       </div>
                       <input
@@ -183,7 +183,7 @@ const Calculator = () => {
                         <div className="navbar-end cursor-pointer">
                           <button
                             type="Submit"
-                            className=" bg-button text-white w-[122px] h-[32px] text-center flex justify-center items-center px-6 py-3 rounded-[40px]"
+                            className=" bg-buttonb text-white w-[122px] h-[32px] text-center flex justify-center items-center px-6 py-3 rounded-[40px]"
                           >
                             Calculate
                           </button>

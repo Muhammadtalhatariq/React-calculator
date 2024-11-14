@@ -51,21 +51,21 @@ const Navbar = () => {
             </div>
             <a className="btn btn-ghost text-2xl font-bold">Logo Here</a>
           </div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+          <div className=" hidden lg:flex">
+            <ul className=" flex justify-between items-center gap-8 px-1">
             <li>
                   <a href="#" className="font-medium hover:font-bold ">Home </a>
                 </li>
                 <li>
-                  <a className="font-medium hover:font-bold" href="#">
+                  <a className="font-medium hover:font-bold whitespace-nowrap" href="#">
                     Fitness & Health
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-medium hover:font-bold"> Calorie Calculator</a>
+                  <a href="#" className="font-medium hover:font-bold whitespace-nowrap"> Calorie Calculator</a>
                 </li>
                 <li>
-                  <a href="#" className="font-medium hover:font-bold" >
+                  <a href="#" className="font-medium hover:font-bold whitespace-nowrap" >
                     Other
                   </a>
                 </li>
