@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="bg-gradient-to-r to-graylight from-graydark  ">
+      <div className="backdrop-opacity-20 backdrop-invert bg-footer/70  ">
         <div className="navbar md:px-16 text-white border-b border-white  ">
           <div className="navbar-start ">
             <div className="dropdown">
