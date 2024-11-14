@@ -1,10 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.range {
+    height: 10px /* 24px */;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    --range-shdw: var(--fallback-bc,oklch(var(--bc)/1));
+    overflow: hidden;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    background-color: transparent;
+}
+.range:focus {
+    outline: none;
+}
+.range:focus-visible::-webkit-slider-thumb {
+    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem /* 32px */ var(--range-shdw) inset;
+}
+.range:focus-visible::-moz-range-thumb {
+    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem /* 32px */ var(--range-shdw) inset;
+}
+.range::-webkit-slider-runnable-track {
+    height: 0.5rem /* 8px */;
+    width: 100%;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+
+}
+.range::-moz-range-track {
+    height: 0.5rem /* 8px */;
+    width: 100%;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
+ 
+}
+.range::-webkit-slider-thumb {
+    position: relative;
+    height: 1.5rem /* 24px */;
+    width: 1.5rem /* 24px */;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    border-style: none;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+    appearance: none;
+    -webkit-appearance: none;
+    top: 50%;
+    color:#4A9500;
+    transform: translateY(-50%);
+    --filler-size: 100rem /* 1600px */;
+    --filler-offset: 0.6rem /* 9.6px */;
+    box-shadow: 0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+}
+.range::-moz-range-thumb {
+    position: relative;
+    height: 1.5rem /* 24px */;
+    width: 1.5rem /* 24px */;
+    border-radius: var(--rounded-box, 1rem /* 16px */);
+    border-style: none;
+    --tw-bg-opacity: 1;
+    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
+    top: 50%;
+    color: #4A9500;
+    --filler-size: 100rem /* 1600px */;
+    --filler-offset: 0.5rem /* 8px */;
+    box-shadow: 0 0 0 3px var(--range-shdw) inset,
+      var(--focus-shadow, 0 0),
+      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+
 }
