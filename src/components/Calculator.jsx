@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
-
   const [age, setage] = useState(18);
   const [Weight, setWeight] = useState(40);
   const [Height, setHeight] = useState(140);
@@ -21,9 +20,11 @@ const Calculator = () => {
         <div className="bg-base-100 absolute -top-20 w-full  rounded-xl text-black shadow-xl">
           <div className="">
             <ul className="flex gap-20 p-3 mx-4">
-              <li className="text-buttonsec font-bold leading-6">Us Units</li>
-              <li className="text-button font-bold leading-6">Metric Units</li>
-              <li  className="text-buttonsec font-bold leading-6">Other Units</li>
+              <li className="text-buttonsec font-bold leading-6 cursor-pointer">Us Units</li>
+              <li className="text-button font-bold leading-6 cursor-pointer">Metric Units</li>
+              <li className="text-buttonsec font-bold leading-6 cursor-pointer">
+                Other Units
+              </li>
             </ul>
             <form onSubmit={handleSubmit} action="">
               <div className="flex md:flex-nowrap flex-wrap">
@@ -68,7 +69,6 @@ const Calculator = () => {
                       }}
                     />
                     <div className=" flex justify-between md:w-72 text-sm">
-                 
                       <p>40</p> <p>150</p>
                     </div>
                   </div>
