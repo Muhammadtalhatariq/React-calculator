@@ -72,7 +72,7 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end cursor-pointer">
-            <a href="#" className=" bg-button text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]">
+            <a href="#" className=" bg-buttonb text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]">
               Get Start
             </a>
           </div>

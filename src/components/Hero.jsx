@@ -23,7 +23,7 @@ const Hero = () => {
                 className="bg-transparent outline-none text-white  md:w-96 w-60"
                 placeholder="Search"
               />
-              <div className="bg-button p-1 rounded-full text-white">
+              <div className="bg-buttonb p-1 rounded-full text-white">
                 <div>
                   <img className="size-4" src="/search.svg" alt="" />
                 </div>
