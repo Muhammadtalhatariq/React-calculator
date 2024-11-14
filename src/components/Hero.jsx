@@ -8,8 +8,8 @@ const Hero = () => {
         <Navbar />
         <div className="text-white h-[546px] flex justify-center items-center">
           <div className="flex justify-center items-center flex-col">
-            <h1 className="md:text-6xl text-3xl font-bold">Calorie Calculator</h1>
-            <p className="text-center md:px-36 px-3 md:text-xl text-lg font-medium pt-3 ">
+            <h1 className="md:text-7xl text-3xl font-bold">Calorie Calculator</h1>
+            <p className="text-center md:px-40 px-3 text-lg font-medium pt-3 ">
               The Calorie Calculator can be used to estimate the number of
               calories a person needs to consume each day. This calculator can
               also provide some simple guidelines for gaining or losing weight.

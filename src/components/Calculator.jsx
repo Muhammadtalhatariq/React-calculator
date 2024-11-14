@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
-  
+
   const [age, setage] = useState(18);
   const [Weight, setWeight] = useState(40);
   const [Height, setHeight] = useState(140);
@@ -20,10 +20,10 @@ const Calculator = () => {
       <div className="md:mx-20 mx-8 relative mb-20">
         <div className="bg-base-100 absolute -top-20 w-full  rounded-xl text-black shadow-xl">
           <div className="">
-            <ul className="flex gap-8 p-3 mx-4">
-              <li>Us Units</li>
-              <li className="text-button font-bold">Metric Units</li>
-              <li>Other Units</li>
+            <ul className="flex gap-20 p-3 mx-4">
+              <li className="text-buttonsec font-bold leading-6">Us Units</li>
+              <li className="text-button font-bold leading-6">Metric Units</li>
+              <li  className="text-buttonsec font-bold leading-6">Other Units</li>
             </ul>
             <form onSubmit={handleSubmit} action="">
               <div className="flex md:flex-nowrap flex-wrap">
@@ -62,13 +62,13 @@ const Calculator = () => {
                       min={40}
                       max={150}
                       value={Weight}
-                      className="cursor-pointer md:w-72 bg-button outline-none"
+                      className="cursor-pointer md:w-72 outline-none "
                       onChange={(e) => {
                         setWeight(e.target.value);
                       }}
                     />
                     <div className=" flex justify-between md:w-72 text-sm">
-                      {" "}
+                 
                       <p>40</p> <p>150</p>
                     </div>
                   </div>
@@ -84,7 +84,7 @@ const Calculator = () => {
                       min={140}
                       max={220}
                       value={Height}
-                      className="cursor-pointer md:w-72 bg-button outline-none"
+                      className="cursor-pointer md:w-72 outline-none "
                       onChange={(e) => {
                         setHeight(e.target.value);
                       }}
@@ -183,33 +183,33 @@ const Calculator = () => {
                 <div className="m-4 flex flex-col gap-2">
                   <div>
                     <h1>Exercise</h1>
-                    <div className="flex justify-center items-center px-4 border rounded-xl border-black gap-2 md:w-[20rem]">
+                    <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                       <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
                         <img src="/form-icon.png" alt="" />
                       </div>
-                      <div className="">
+                      <div className="font-normal text-sm">
                         <p>15-30 minutes of elevated heart rate activity.</p>
                       </div>
                     </div>
                   </div>
                   <div>
                     <h1>Intense exercise</h1>
-                    <div className="flex justify-center items-center px-4 border rounded-xl border-black gap-2 md:w-[20rem]">
+                    <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                       <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
                         <img src="/form-icon.png" alt="" />
                       </div>
-                      <div className="">
+                      <div className="font-normal text-sm">
                         <p>45-120 minutes of elevated heart rate activity.</p>
                       </div>
                     </div>
                   </div>
                   <div>
                     <h1>Very intense exercise</h1>
-                    <div className="flex justify-center items-center px-4 border rounded-xl border-black gap-2 md:w-[20rem]">
+                    <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
                       <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
                         <img src="/form-icon.png" alt="" />
                       </div>
-                      <div className="">
+                      <div className="font-normal text-sm">
                         <p> 2+ hours of elevated heart rate activity.</p>
                       </div>
                     </div>

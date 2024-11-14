@@ -47,11 +47,11 @@ const Card = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col my-20 md:mt-80 mt-[50rem]">
-        <h1 className="md:text-5xl text-3xl font-bold text-center">
+        <h1 className="md:text-6xl text-3xl font-bold text-center">
           Fitness & Health Calculators
         </h1>
         <div>
-          <div className="flex justify-center flex-wrap gap-4 mt-10">
+          <div className="flex justify-center flex-wrap gap-4 mt-20">
             {cart.map((item) => (
               <div
                 key={item.id}
@@ -59,7 +59,7 @@ const Card = () => {
               >
                 <div className="flex flex-col justify-center items-center">
                   <div className="relative flex justify-center items-center ">
-                    <div className=" absolute -top-8  w-20 h-20 rounded-full  bg-button flex justify-center items-center">
+                    <div className=" absolute -top-8  w-20 h-20 rounded-full bg-iconcol flex justify-center items-center">
                       <div className="">
                         <img className="" src={item.image} alt="" />
                       </div>
