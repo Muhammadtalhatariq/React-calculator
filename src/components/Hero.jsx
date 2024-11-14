@@ -14,7 +14,7 @@ const Hero = () => {
               calories a person needs to consume each day. This calculator can
               also provide some simple guidelines for gaining or losing weight.
             </p>
-            <label className="backdrop-opacity-20 backdrop-invert bg-footer/70 flex items-center  text-white gap-2 mt-6 border border-white p-1 rounded-3xl px-4">
+            <label className="backdrop-opacity-10 backdrop-invert bg-footer/60 flex items-center  text-white gap-2 mt-6 border border-white p-1 rounded-3xl px-4">
               <input type="text" className="bg-transparent outline-none  md:w-96 w-60" placeholder="Search" />
             <div className="bg-button p-1 rounded-full text-white">
             <svg
