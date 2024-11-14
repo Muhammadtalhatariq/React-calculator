@@ -78,3 +78,7 @@ body {
       calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 
 }
+
+.borderrr{
+    border-radius: 24% 24% 24% 26% / 0% 4% 0% 100%;
+}

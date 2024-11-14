@@ -47,7 +47,7 @@ const Card = () => {
   return (
     <>
       <div className="flex justify-center items-center flex-col my-20 md:mt-80 mt-[50rem]">
-        <h1 className="md:text-6xl text-3xl font-bold text-center">
+        <h1 className="md:text-5xl text-3xl font-bold text-center">
           Fitness & Health Calculators
         </h1>
         <div>

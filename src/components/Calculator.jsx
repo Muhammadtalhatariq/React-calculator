@@ -17,15 +17,20 @@ const Calculator = () => {
   return (
     <>
       <div className="md:mx-20 mx-8 relative mb-20">
-        <div className="bg-base-100 absolute -top-20 w-full  rounded-xl text-black shadow-xl">
+        <div className="bg-base-100 absolute -top-20 w-full rounded-xl text-black shadow-xl">
           <div className="">
             <ul className="flex gap-20 p-3 mx-4">
-              <li className="text-buttonsec font-bold leading-6 cursor-pointer">Us Units</li>
-              <li className="text-button font-bold leading-6 cursor-pointer">Metric Units</li>
+              <li className="text-buttonsec font-bold leading-6 cursor-pointer">
+                Us Units
+              </li>
+              <li className="text-button font-bold leading-6 cursor-pointer">
+                Metric Units
+              </li>
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Other Units
               </li>
             </ul>
+
             <form onSubmit={handleSubmit} action="">
               <div className="flex md:flex-nowrap flex-wrap">
                 <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
