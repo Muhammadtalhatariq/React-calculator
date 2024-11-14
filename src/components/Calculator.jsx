@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
+  
   const [age, setage] = useState(18);
   const [Weight, setWeight] = useState(40);
   const [Height, setHeight] = useState(140);
