@@ -1,6 +1,7 @@
 import React from "react";
 
 const Navbar = () => {
+  
   return (
     <>
       <div className="backdrop-opacity-30 backdrop-invert bg-footer/80  ">
