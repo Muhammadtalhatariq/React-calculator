@@ -11,13 +11,13 @@ const Hero = () => {
             <h1 className="md:text-7xl text-3xl font-bold">
               Calorie Calculator
             </h1>
-            <p className="text-center md:px-40 px-3 text-lg font-medium pt-3 ">
+            <p className="text-center md:px-60 px-3 text-lg font-normal pt-3 ">
               The Calorie Calculator can be used to estimate the number of
               calories a person needs to consume each day. This calculator can
               also provide some simple guidelines for gaining or losing weight.
             </p>
 
-            <label className="backdrop-opacity-10 backdrop-invert bg-white/40 flex items-center  text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-4">
+            <label className="backdrop-opacity-10 backdrop-invert bg-white/20 flex items-center  text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-4">
               <input
                 type="text"
                 className="bg-transparent outline-none text-white  md:w-96 w-60"
