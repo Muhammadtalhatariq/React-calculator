@@ -115,7 +115,7 @@ const Calculator = () => {
                           name=""
                           id=""
                         >
-                          <div className="flex flex-nowrap gap-6 rounded-full shadow-2xl px-1">
+                          <div className="flex flex-nowrap gap-6 rounded-full shadow-3xl px-1">
                             <div
                               value={activity}
                               onChange={(e) => {
@@ -198,7 +198,7 @@ const Calculator = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="m-4 flex flex-col gap-2">
                     <div>
                       <h1>Exercise</h1>
