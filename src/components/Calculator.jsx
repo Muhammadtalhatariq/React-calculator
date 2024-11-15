@@ -19,7 +19,7 @@ const Calculator = () => {
       <div className="md:mx-20  mx-8  mb-20">
         <div className="w-full  ">
           <div className="flex relative rounded-[40px] text-black shadow-xl ">
-            <ul className=" absolute -top-20 flex gap-20 p-3 mx-4 bg-base-100 md:w-[550px] rounded-xl shadow-xl path h-20">
+            <ul className=" absolute -top-20 flex gap-16 p-3 mx-4 px-10 bg-base-100 md:w-[550px] rounded-xl shadow-xl path h-20">
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Us Units
               </li>
@@ -203,7 +203,7 @@ const Calculator = () => {
                     <div>
                       <h1>Exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
-                        <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
+                        <div className="w-10 h-8 bg-icon rounded-full  flex justify-center items-center">
                           <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
@@ -214,7 +214,7 @@ const Calculator = () => {
                     <div>
                       <h1>Intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
-                        <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
+                        <div className="w-10 h-8 bg-icon rounded-full border-4 flex justify-center items-center">
                           <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
@@ -225,7 +225,7 @@ const Calculator = () => {
                     <div>
                       <h1>Very intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
-                        <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
+                        <div className="w-10 h-8 bg-icon rounded-full border-4 flex justify-center items-center">
                           <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
