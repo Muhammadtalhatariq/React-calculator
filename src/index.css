@@ -7,11 +7,10 @@
 body {
   font-family: "Kumbh Sans", sans-serif;
 }
-
+/* set corved in calculator  */
 .path {
   clip-path: polygon(0 0, 79% 0, 100% 68%, 0 64%);
 }
-
 
 /* Hide the default radio button */
 .custom-radio input[type="radio"] {
