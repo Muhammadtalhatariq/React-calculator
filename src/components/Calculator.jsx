@@ -107,11 +107,11 @@ const Calculator = () => {
                         <p className="text-buttonsec">220</p>
                       </div>
                     </div>
-                    <div className="flex flex-col items-center gap-x-1 text-black m-3">
-                      <div className="flex  flex-col justify-between md:w-72  ">
+                    <div className="flex flex-col items-center gap-x-1 text-black bg-white m-3">
+                      <div className="flex flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
                         <div
-                          className="group rounded-full shadow-xl bg-base-100 outline-none  md:w-[320px] p-3 font-semibold "
+                          className=" outline-none  md:w-[320px] p-3 font-semibold "
                           name=""
                           id=""
                         >
@@ -121,7 +121,7 @@ const Calculator = () => {
                               onChange={(e) => {
                                 setactivity(e.target.value);
                               }}
-                              className=" rounded-full group-hover:group shadow-2xl bg-base-100 outline-none p-2 font-semibold"
+                              className=" rounded-full shadow-2xl outline-none p-2 font-semibold"
                             >
                               Moderate Exercise 4-5 Times/Week
                             </div>
