@@ -198,6 +198,7 @@ const Calculator = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="m-4 flex flex-col gap-2">
                     <div>
                       <h1>Exercise</h1>
