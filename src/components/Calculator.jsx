@@ -34,7 +34,6 @@ const Calculator = () => {
           <div className="relative mx-4 text-black bg-white  ">
             <div className="absolute -top-[50px] bg-white  rounded-[47px]">
               <form onSubmit={handleSubmit} action="">
-                
                 <div className="flex md:flex-nowrap flex-wrap rounded-[43px] rounded-tl-none shadow-2xl bg-white">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
                     <div className="flex flex-col flex-wrap items-center gap-x-1 text-black mx-3 pt-8">
@@ -214,7 +213,7 @@ const Calculator = () => {
                     <div>
                       <h1>Intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
-                        <div className="w-10 h-8 bg-icon rounded-full border-4 flex justify-center items-center">
+                        <div className="w-10 h-8 bg-icon rounded-full flex justify-center items-center">
                           <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
@@ -225,7 +224,7 @@ const Calculator = () => {
                     <div>
                       <h1>Very intense exercise</h1>
                       <div className="flex justify-center items-center px-4 border rounded-xl border-buttonsec gap-2 md:w-[20rem]">
-                        <div className="w-10 h-8 bg-icon rounded-full border-4 flex justify-center items-center">
+                        <div className="w-10 h-8 bg-icon rounded-full  flex justify-center items-center">
                           <img src="/icon2.svg" alt="" />
                         </div>
                         <div className="font-normal text-sm">
