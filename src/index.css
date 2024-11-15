@@ -92,8 +92,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Remove default thumb styling */
   appearance: none;
-  width: 20px; /* Thumb width */
-  height: 20px; /* Thumb height */
+  width: 16px; /* Thumb width */
+  height: 16px; /* Thumb height */
   background: white; /* Thumb color */
   border-radius: 100%; /* Make thumb circular */
   cursor: pointer; /* Change cursor to pointer */
@@ -102,7 +102,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   width: 40px;
   height: 40px;
-  background:white ; /* Thumb color for Firefox */
+  background: white;
   border-radius: 50%;
   cursor: pointer;
   color: white;
@@ -110,18 +110,53 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-ms-thumb {
   width: 20px;
   height: 20px;
-  background-color: white;
   border-radius: 50%;
   cursor: pointer;
-  color: #4a9500;
+  color: transparent;
 }
 
-
-.navbarb{
+.navbarb {
   background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(6px);
 }
 .secbg {
-  background:rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(4px);
+}
+
+.range1 {
+  height: 1.5rem /* 24px */;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  --range-shdw: var(--fallback-bc, oklch(var(--bc) / 1));
+  overflow: hidden;
+  border-radius: var(--rounded-box, 1rem 16px);
+}
+
+.range1::-webkit-slider-runnable-track {
+  height: 0.5rem /* 8px */;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  background-color: var(--fallback-bc, oklch(var(--bc) / 0.1));
+}
+
+.range1::-webkit-slider-thumb {
+  position: relative;
+  height: 1.5rem /* 24px */;
+  width: 1.5rem /* 24px */;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  /* background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity))); */
+  appearance: none;
+  -webkit-appearance: none;
+  top: 50%;
+  /* color: var(--range-shdw); */
+  transform: translateY(-50%);
+  --filler-size: 100rem /* 1600px */;
+  --filler-offset: 0.6rem /* 9.6px */;
+  box-shadow: 0 0 0 0px var(--range-shdw) inset, var(--focus-shadow, 0 0),
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }

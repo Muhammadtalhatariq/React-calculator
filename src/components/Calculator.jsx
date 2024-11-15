@@ -49,7 +49,7 @@ const Calculator = () => {
                         min={6}
                         max={80}
                         value={age}
-                        className="cursor-pointer md:w-72 appearance-none range"
+                        className="cursor-pointer md:w-72 range1"
                         onChange={(e) => {
                           setage(e.target.value);
                         }}
@@ -73,7 +73,7 @@ const Calculator = () => {
                         min={40}
                         max={150}
                         value={Weight}
-                        className="cursor-pointer md:w-72 range "
+                        className="cursor-pointer md:w-72 range1 "
                         onChange={(e) => {
                           setWeight(e.target.value);
                         }}
@@ -96,7 +96,7 @@ const Calculator = () => {
                         min={140}
                         max={220}
                         value={Height}
-                        className="cursor-pointer md:w-72 outline-none range"
+                        className="cursor-pointer md:w-72 outline-none range1"
                         onChange={(e) => {
                           setHeight(e.target.value);
                         }}
