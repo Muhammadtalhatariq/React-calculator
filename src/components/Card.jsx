@@ -44,10 +44,10 @@ const cart = [
 ];
 
 const Card = () => {
-  
+
   return (
     <>
-      <div className="flex justify-center items-center flex-col my-20 md:mt-80 mt-[50rem]">
+      <div className="flex justify-center items-center flex-col my-20 md:mt-80 mt-[50rem] ">
         <h1 className="md:text-5xl text-3xl font-bold text-center">
           Fitness & Health Calculators
         </h1>
@@ -56,7 +56,7 @@ const Card = () => {
             {cart.map((item) => (
               <div
                 key={item.id}
-                className=" bg-base-100 w-72 h-32 shadow-2xl text-center my-6 rounded-xl "
+                className=" bg-white w-72 h-32 shadow-2xl text-center my-6 rounded-xl "
               >
                 <div className="flex flex-col justify-center items-center ">
                   <div className="relative flex justify-center items-center  ">
