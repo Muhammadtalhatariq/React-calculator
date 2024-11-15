@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 
 const Hero = () => {
+  
   return (
     <>
       <div className="w-full bg-hero-pattern bg-cover">
