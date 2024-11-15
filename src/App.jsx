@@ -7,13 +7,14 @@ import Calculator from "./components/Calculator";
 const App = () => {
   return (
     <>
-    <div className="bg-white">
-    <Hero />
-      <Calculator/>
-      <Card />
-      <Footer />
-    </div>
-    
+      <div className="bg-white">
+
+        <Hero />
+        <Calculator />
+        <Card />
+        <Footer />
+        
+      </div>
     </>
   );
 };
