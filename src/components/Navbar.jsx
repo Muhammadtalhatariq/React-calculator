@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="backdrop-opacity-30 backdrop-invert bg-footer/80  ">
-        <div className="navbar md:px-16 text-white border-b border-white  ">
+      <div className="backdrop-opacity-30 backdrop-invert bg-footer/80 bgtheam ">
+        <div className="navbar md:px-16 text-white border-b border-white   ">
           <div className="navbar-start ">
             <div className="dropdown">
               <div
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="hidden lg:flex">
             <ul className="flex justify-between items-center gap-8 px-1">
               <li>
-                <a href="#" className="font-medium hover:font-bold whitespace-nowrap duration-300">
+                <a href="#" className="font-medium hover:font-bold whitespace-nowrap duration-300 ">
                   Home{" "}
                 </a>
               </li>

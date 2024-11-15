@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 
 const Hero = () => {
-  
+
   return (
     <>
       <div className="w-full bg-hero-pattern bg-cover">
@@ -18,7 +18,7 @@ const Hero = () => {
               also provide some simple guidelines for gaining or losing weight.
             </p>
 
-            <label className="backdrop-opacity-10 z-10backdrop-invert bg-white/10 flex items-center  after:text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-2">
+            <label className="backdrop-opacity-10 z-10backdrop-invert bg-footer/50  bgtheam flex items-center  after:text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-2">
               <input
                 type="search"
                 className="bg-transparent outline-none text-white md:w-96 lg:w-[450px] w-40 "
