@@ -31,6 +31,7 @@ const Calculator = () => {
               </li>
             </ul>
           </div>
+          
           <div className="relative mx-4  text-black bg-white">
             <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl ">
               <form onSubmit={handleSubmit} action="">
