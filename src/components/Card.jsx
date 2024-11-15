@@ -66,7 +66,7 @@ const Card = () => {
                       </div>
                     </div>
                     <div className="absolute top-16">
-                      <p className="block w-60 font-semibold">{item.title}</p>
+                      <p className="block w-60 font-semibold text-black">{item.title}</p>
                       <a
                         className=" text-buttonb underline font-medium"
                         href="#"
