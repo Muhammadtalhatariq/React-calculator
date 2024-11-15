@@ -18,7 +18,7 @@ const Calculator = () => {
     <>
       <div className="md:mx-20  mx-8  mb-20">
         <div className="w-full  ">
-          <div className="flex relative rounded-xl text-black shadow-xl ">
+          <div className="flex relative rounded-[40px] text-black shadow-xl ">
             <ul className=" absolute -top-20 flex gap-20 p-3 mx-4 bg-base-100 md:w-[550px] rounded-xl shadow-xl path h-20">
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Us Units
@@ -33,7 +33,7 @@ const Calculator = () => {
           </div>
 
           <div className="relative mx-4  text-black ">
-            <div className="bg-base-100  absolute -top-[50px] rounded-xl shadow-xl ">
+            <div className="bg-base-100  absolute -top-[50px] rounded-[40px] rounded-t-[0px] shadow-xl ">
               <form onSubmit={handleSubmit} action="">
                 <div className="flex md:flex-nowrap flex-wrap">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">

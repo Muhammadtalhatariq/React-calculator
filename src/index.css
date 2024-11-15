@@ -8,73 +8,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-.range {
-  height: 10px;
-  width: 100%;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  --range-shdw: var(--fallback-bc, oklch(var(--bc) / 1));
-  overflow: hidden;
-  border-radius: var(--rounded-box, 1rem /* 16px */);
-  background-color: transparent;
-}
-.range:focus {
-  outline: none;
-}
-.range:focus-visible::-webkit-slider-thumb {
-  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset,
-    0 0 0 2rem /* 32px */ var(--range-shdw) inset;
-}
-.range:focus-visible::-moz-range-thumb {
-  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset,
-    0 0 0 2rem /* 32px */ var(--range-shdw) inset;
-}
-.range::-webkit-slider-runnable-track {
-  height: 0.5rem /* 8px */;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem /* 16px */);
-  background-color: var(--fallback-bc, oklch(var(--bc) / 0.1));
-}
-.range::-moz-range-track {
-  height: 0.5rem /* 8px */;
-  width: 100%;
-  border-radius: var(--rounded-box, 1rem /* 16px */);
-  background-color: var(--fallback-bc, oklch(var(--bc) / 0.1));
-}
-.range::-webkit-slider-thumb {
-  position: relative;
-  height: 1.5rem /* 24px */;
-  width: 1.5rem /* 24px */;
-  border-radius: var(--rounded-box, 1rem /* 16px */);
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
-  appearance: none;
-  -webkit-appearance: none;
-  top: 50%;
-  color: #4a9500;
-  transform: translateY(-50%);
-  --filler-size: 100rem /* 1600px */;
-  --filler-offset: 0.6rem /* 9.6px */;
-  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0),
-    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
-.range::-moz-range-thumb {
-  position: relative;
-  height: 1.5rem /* 24px */;
-  width: 1.5rem /* 24px */;
-  border-radius: var(--rounded-box, 1rem /* 16px */);
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
-  top: 50%;
-  color: #4a9500;
-  --filler-size: 100rem /* 1600px */;
-  --filler-offset: 0.5rem /* 8px */;
-  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0),
-    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
+
 
 .path {
   clip-path: polygon(0 0, 89% 0, 100% 64%, 0 64%);
@@ -118,13 +52,71 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* <div class="custom-radio">
-    <label>
-        <input type="radio" name="option" />
-        Option 1
-    </label>
-    <label>
-        <input type="radio" name="option" />
-        Option 2
-    </label>
-</div> */
+/* Style the search input field */
+input[type="search"] {
+  width: 560px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent; /* Input background color */
+  color: white; /* Text color */
+}
+
+/* Style the clear (X) button */
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 40px; /* Background color of the clear button */
+  mask-size: cover;
+  color: white;
+}
+
+/* Style the suggestions dropdown (WebKit browsers only) */
+input[type="search"]::-webkit-search-results-decoration {
+  background-color: transparent; /* Background color of dropdown */
+  color: white; /* Text color of dropdown */
+}
+input[type="search"]::placeholder {
+  color: white;
+}
+
+
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+  appearance: none; /* Remove default styling in modern browsers */
+  width: 100%; /* Adjust width */
+  height: 10px; /* Adjust height of the track */
+  background: #ccc; /* Track color */
+  border-radius: 4px; /* Round corners */
+  outline: none; /* Remove outline */
+  color: white;
+}
+
+/* Thumb (handle) styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default thumb styling */
+  appearance: none;
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  background: white; /* Thumb color */
+  border-radius: 100%; /* Make thumb circular */
+  cursor: pointer; /* Change cursor to pointer */
+  color: #4A9500;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: white; /* Thumb color for Firefox */
+  border-radius: 100%;
+  cursor: pointer;
+
+}
+
+input[type="range"]::-ms-thumb {
+  width: 20px;
+  height: 20px;
+  /* Thumb color for IE */
+  border-radius: 50%;
+  cursor: pointer;
+ 
+}

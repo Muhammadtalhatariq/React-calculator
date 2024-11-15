@@ -14,10 +14,10 @@ const Footer = () => {
           </aside>
           <nav>
             <h6 className="text-lg text-white font-semibold cursor-pointer">Quick Links</h6>
-            <a className="link link-hover font-medium cursor-pointer">Home</a>
-            <a className="link link-hover font-medium cursor-pointer"> Fitness & Health</a>
-            <a className="link link-hover font-medium cursor-pointer">Calorie Calculator</a>
-            <a className="link link-hover font-medium cursor-pointer"> Other</a>
+            <a className=" font-normal cursor-pointer">Home</a>
+            <a className=" font-normal cursor-pointer"> Fitness & Health</a>
+            <a className=" font-normal cursor-pointer">Calorie Calculator</a>
+            <a className=" font-normal cursor-pointer "> Other</a>
           </nav>
 
           <nav>
