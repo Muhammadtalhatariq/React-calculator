@@ -31,11 +31,10 @@ const Calculator = () => {
               </li>
             </ul>
           </div>
-
           <div className="relative mx-4  text-black bg-white">
-            <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl ">
+            <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl bg-white ">
               <form onSubmit={handleSubmit} action="">
-                <div className="flex md:flex-nowrap flex-wrap">
+                <div className="flex md:flex-nowrap flex-wrap  bg-white">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
                     <div className="flex flex-col flex-wrap items-center gap-x-1 text-black mx-3 pt-8">
                       <div className="flex justify-between md:w-72  ">
