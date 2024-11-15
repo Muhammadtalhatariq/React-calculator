@@ -17,10 +17,10 @@ const Hero = () => {
               also provide some simple guidelines for gaining or losing weight.
             </p>
 
-            <label className="secbg flex items-center lg:w-[550px] w-40  after:text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-2">
+            <label className="secbg flex items-center lg:w-[550px] w-40 h-[53px]  after:text-white  gap-2 mt-6 border border-white p-1 rounded-3xl px-2">
               <input
                 type="search"
-                className=" outline-none text-white bg-transparent  "
+                className=" outline-none text-white bg-transparent"
                 placeholder="Search"
               />
               <div className="bg-icon p-1 rounded-full text-white">
