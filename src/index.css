@@ -77,7 +77,6 @@ input[type="search"]::placeholder {
   color: white;
 }
 
-
 input[type="range"] {
   -webkit-appearance: none; /* Remove default styling in WebKit browsers */
   appearance: none; /* Remove default styling in modern browsers */
@@ -98,27 +97,31 @@ input[type="range"]::-webkit-slider-thumb {
   background: white; /* Thumb color */
   border-radius: 100%; /* Make thumb circular */
   cursor: pointer; /* Change cursor to pointer */
-  color: #4A9500;
+  color: #4a9500;
 }
 input[type="range"]::-moz-range-thumb {
   width: 40px;
   height: 40px;
-  background: white; /* Thumb color for Firefox */
+  background:white ; /* Thumb color for Firefox */
   border-radius: 50%;
   cursor: pointer;
-  color: whitesmoke;
-
+  color: white;
 }
 input[type="range"]::-ms-thumb {
   width: 20px;
   height: 20px;
-background-color: white;
+  background-color: white;
   border-radius: 50%;
   cursor: pointer;
- 
+  color: #4a9500;
 }
 
-.bgtheam {
-  filter: blur(0.5px);
-  z-index: 10;
+
+.navbarb{
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(6px);
+}
+.secbg {
+  background:rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(4px);
 }

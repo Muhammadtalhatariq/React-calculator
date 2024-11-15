@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <>
-      <div className="backdrop-opacity-30 backdrop-invert bg-footer/80 bgtheam ">
+      <div className="navbarb">
         <div className="navbar md:px-16 text-white border-b border-white   ">
           <div className="navbar-start ">
             <div className="dropdown">
