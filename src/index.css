@@ -9,7 +9,7 @@ body {
 }
 
 .path {
-  clip-path: polygon(0 0, 89% 0, 100% 64%, 0 64%);
+  clip-path: polygon(0 0, 80% 0, 100% 64%, 0 64%);
 }
 
 /* Hide the default radio button */
