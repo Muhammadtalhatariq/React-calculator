@@ -12,6 +12,7 @@ body {
   clip-path: polygon(0 0, 80% 0, 100% 64%, 0 64%);
 }
 
+
 /* Hide the default radio button */
 .custom-radio input[type="radio"] {
   appearance: none;
