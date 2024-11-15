@@ -11,7 +11,6 @@ const App = () => {
       <Calculator/>
       <Card />
       <Footer />
-    
     </>
   );
 };

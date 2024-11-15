@@ -20,7 +20,6 @@ export default {
       },
       backgroundImage: {
         'hero-pattern': "url('/bg.jfif')",
-        'navbar': "url('/navbar.png')",
       }
     },
   },
