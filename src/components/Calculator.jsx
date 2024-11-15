@@ -17,7 +17,7 @@ const Calculator = () => {
   return (
     <>
       <div className="md:mx-20 mx-8  mb-20 bg-white">
-        <div className="w-full">
+        <div className="w-full bg-white">
           <div className="flex relative rounded-[40px] text-black shadow-xl bg-white">
             <ul className=" absolute -top-20 flex gap-16 bg-white p-3 mx-4 px-10 md:w-[550px] rounded-xl shadow-xl path h-20">
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
@@ -31,7 +31,7 @@ const Calculator = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="relative mx-4  text-black bg-white">
             <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl ">
               <form onSubmit={handleSubmit} action="">
