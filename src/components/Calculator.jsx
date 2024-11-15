@@ -32,7 +32,7 @@ const Calculator = () => {
             </ul>
           </div>
           <div className="relative mx-4 text-black bg-white  ">
-            <div className="absolute -top-[50px] bg-white ">
+            <div className="absolute -top-[50px] bg-white  rounded-[47px]">
               <form onSubmit={handleSubmit} action="">
                 <div className="flex md:flex-nowrap flex-wrap rounded-[43px] rounded-tl-none shadow-2xl bg-white">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
@@ -234,7 +234,6 @@ const Calculator = () => {
                     </div>
                   </div>
                 </div>
-
               </form>
             </div>
           </div>
