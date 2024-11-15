@@ -111,7 +111,7 @@ const Calculator = () => {
                       <div className="flex flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
                         <div
-                          className=" outline-none  md:w-[320px] p-3 font-semibold "
+                          className=" outline-none shadow-2xl rounded-2xl md:w-[320px] p-3 font-semibold "
                           name=""
                           id=""
                         >
