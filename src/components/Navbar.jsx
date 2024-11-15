@@ -32,7 +32,9 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content bg-black rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 <li>
-                  <a href="#" className="font-medium hover:font-bold ">Home </a>
+                  <a href="#" className="font-medium hover:font-bold ">
+                    Home{" "}
+                  </a>
                 </li>
                 <li>
                   <a className="font-medium hover:font-bold" href="#">
@@ -40,10 +42,13 @@ const Navbar = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-medium hover:font-bold"> Calorie Calculator</a>
+                  <a href="#" className="font-medium hover:font-bold">
+                    {" "}
+                    Calorie Calculator
+                  </a>
                 </li>
                 <li>
-                  <a href="#" className="font-medium hover:font-bold" >
+                  <a href="#" className="font-medium hover:font-bold">
                     Other
                   </a>
                 </li>
@@ -51,28 +56,45 @@ const Navbar = () => {
             </div>
             <a className=" text-2xl font-bold cursor-pointer">Logo Here</a>
           </div>
-          <div className=" hidden lg:flex">
-            <ul className=" flex justify-between items-center gap-8 px-1">
-            <li>
-                  <a href="#" className="font-medium hover:font-bold ">Home </a>
-                </li>
-                <li>
-                  <a className="font-medium hover:font-bold whitespace-nowrap" href="#">
-                    Fitness & Health
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="font-medium hover:font-bold whitespace-nowrap"> Calorie Calculator</a>
-                </li>
-                <li>
-                  <a href="#" className="font-medium hover:font-bold whitespace-nowrap" >
-                    Other
-                  </a>
-                </li>
+          <div className="hidden lg:flex">
+            <ul className="flex justify-between items-center gap-8 px-1">
+              <li>
+                <a href="#" className="font-medium hover:font-bold whitespace-nowrap duration-300">
+                  Home{" "}
+                </a>
+              </li>
+              <li>
+                <a
+                  className="font-medium hover:font-bold whitespace-nowrap duration-300"
+                  href="#"
+                >
+                  Fitness & Health
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="font-medium hover:font-bold whitespace-nowrap duration-300"
+                >
+                  {" "}
+                  Calorie Calculator
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="font-medium hover:font-bold whitespace-nowrap duration-300"
+                >
+                  Other
+                </a>
+              </li>
             </ul>
           </div>
           <div className="navbar-end cursor-pointer">
-            <a href="#" className=" bg-buttonb text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]">
+            <a
+              href="#"
+              className=" bg-buttonb text-white w-[132px] h-[32px] text-center flex justify-center items-center px-6 py-4 rounded-[40px]"
+            >
               Get Start
             </a>
           </div>

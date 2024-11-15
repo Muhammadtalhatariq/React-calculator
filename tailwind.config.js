@@ -9,7 +9,7 @@ export default {
       colors : {
         buttonb : "#4A9500",
         border : "#DCDCDC",
-        fborder : "#E86C004D 30%" ,
+        fborder : "#6C004D 70%" ,
         button : "#E86C004D",
         buttonsec :"#22222280",
         footer : " #404040",

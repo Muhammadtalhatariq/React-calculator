@@ -41,7 +41,8 @@ const Calculator = () => {
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Age</span>{" "}
                         <div>
-                          <span className="text-buttonb">{age}</span> /<span className="text-buttonsec">80</span>{" "}
+                          <span className="text-buttonb">{age}</span> /
+                          <span className="text-buttonsec">80</span>{" "}
                         </div>
                       </div>
                       <input
@@ -56,14 +57,16 @@ const Calculator = () => {
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
                         {" "}
-                        <p className="text-buttonsec">18</p> <p className="text-buttonsec">80</p>
+                        <p className="text-buttonsec">18</p>{" "}
+                        <p className="text-buttonsec">80</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black mx-3 pt-8 ">
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Weight</span>{" "}
                         <div>
-                          <span className="text-buttonb">{Weight}</span>/<span className="text-buttonsec">150</span>{" "}
+                          <span className="text-buttonb">{Weight}</span>/
+                          <span className="text-buttonsec">150</span>{" "}
                         </div>
                       </div>
                       <input
@@ -77,14 +80,16 @@ const Calculator = () => {
                         }}
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
-                        <p className="text-buttonsec">40</p> <p className="text-buttonsec">150</p>
+                        <p className="text-buttonsec">40</p>{" "}
+                        <p className="text-buttonsec">150</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black m-3">
                       <div className="flex justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Height</span>{" "}
                         <div>
-                          <span className="text-buttonb">{Height}</span>/<span className="text-buttonsec">220</span>{" "}
+                          <span className="text-buttonb">{Height}</span>/
+                          <span className="text-buttonsec">220</span>{" "}
                         </div>
                       </div>
                       <input
@@ -99,27 +104,33 @@ const Calculator = () => {
                       />
                       <div className=" flex justify-between md:w-72 text-sm">
                         {" "}
-                        <p className="text-buttonsec">140</p> <p className="text-buttonsec">220</p>
+                        <p className="text-buttonsec">140</p>{" "}
+                        <p className="text-buttonsec">220</p>
                       </div>
                     </div>
                     <div className="flex flex-col items-center gap-x-1 text-black m-3">
                       <div className="flex  flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
-                        <select
-                          className=" rounded-full shadow-xl bg-base-100 outline-none  md:w-72 p-3 font-semibold "
+                        <div
+                          className="group rounded-full shadow-xl bg-base-100 outline-none  md:w-[320px] p-3 font-semibold "
                           name=""
                           id=""
                         >
-                          <option
-                            value={activity}
-                            onChange={(e) => {
-                              setactivity(e.target.value);
-                            }}
-                            className=" rounded-full shadow-2xl bg-base-100 outline-none p-2 font-semibold"
-                          >
-                            Moderate Exercise 4-5 Times/Week
-                          </option>
-                        </select>
+                          <div className="flex flex-nowrap gap-6">
+                            <div
+                              value={activity}
+                              onChange={(e) => {
+                                setactivity(e.target.value);
+                              }}
+                              className=" rounded-full group-hover:group shadow-2xl bg-base-100 outline-none p-2 font-semibold"
+                            >
+                              Moderate Exercise 4-5 Times/Week
+                            </div>
+                            <div className="flex justify-center items-center">
+                              <img src="/down.svg" alt="" />
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                     <div className="flex flex-col gap-x-1 text-black m-3">
@@ -130,8 +141,7 @@ const Calculator = () => {
 
                         <div className="flex ">
                           <div className="">
-                            <label className="label cursor-pointer gap-2">
-                             
+                            <label className="label cursor-pointer gap-2 custom-radio">
                               <input
                                 value={genter}
                                 onChange={(e) => {
@@ -139,15 +149,14 @@ const Calculator = () => {
                                 }}
                                 type="radio"
                                 name="radio-10"
-                                className="  bg-button"
+                                className=" "
                                 defaultChecked
                               />
-                               <span className="label-text">Male</span>
+                              <span className="label-text">Male</span>
                             </label>
                           </div>
                           <div className="">
-                            <label className="label cursor-pointer gap-2">
-                              
+                            <label className="label cursor-pointer gap-2 custom-radio">
                               <input
                                 value={genter}
                                 onChange={(e) => {
@@ -155,14 +164,13 @@ const Calculator = () => {
                                 }}
                                 type="radio"
                                 name="radio-10"
-                                className=" checked:bg-button"
+                                className=" "
                               />
                               <span className="label-text">Female</span>
                             </label>
                           </div>
                           <div className="">
-                            <label className="label cursor-pointer gap-2">
-                             
+                            <label className="label cursor-pointer gap-2 custom-radio">
                               <input
                                 value={genter}
                                 onChange={(e) => {
@@ -170,9 +178,9 @@ const Calculator = () => {
                                 }}
                                 type="radio"
                                 name="radio-10"
-                                className=" checked:bg-button"
+                                className="outline-none"
                               />
-                               <span className="label-text"> Other</span>
+                              <span className="label-text"> Other</span>
                             </label>
                           </div>
                         </div>

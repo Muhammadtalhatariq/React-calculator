@@ -9,78 +9,122 @@ body {
 }
 
 .range {
-    height: 10px;
-    width: 100%;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    --range-shdw: var(--fallback-bc,oklch(var(--bc)/1));
-    overflow: hidden;
-    border-radius: var(--rounded-box, 1rem /* 16px */);
-    background-color: transparent;
+  height: 10px;
+  width: 100%;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  --range-shdw: var(--fallback-bc, oklch(var(--bc) / 1));
+  overflow: hidden;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  background-color: transparent;
 }
 .range:focus {
-    outline: none;
+  outline: none;
 }
 .range:focus-visible::-webkit-slider-thumb {
-    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem /* 32px */ var(--range-shdw) inset;
+  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset,
+    0 0 0 2rem /* 32px */ var(--range-shdw) inset;
 }
 .range:focus-visible::-moz-range-thumb {
-    --focus-shadow: 0 0 0 6px var(--fallback-b1,oklch(var(--b1)/1)) inset, 0 0 0 2rem /* 32px */ var(--range-shdw) inset;
+  --focus-shadow: 0 0 0 6px var(--fallback-b1, oklch(var(--b1) / 1)) inset,
+    0 0 0 2rem /* 32px */ var(--range-shdw) inset;
 }
 .range::-webkit-slider-runnable-track {
-    height: 0.5rem /* 8px */;
-    width: 100%;
-    border-radius: var(--rounded-box, 1rem /* 16px */);
-    background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
-
+  height: 0.5rem /* 8px */;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  background-color: var(--fallback-bc, oklch(var(--bc) / 0.1));
 }
 .range::-moz-range-track {
-    height: 0.5rem /* 8px */;
-    width: 100%;
-    border-radius: var(--rounded-box, 1rem /* 16px */);
-    background-color: var(--fallback-bc,oklch(var(--bc)/0.1));
- 
+  height: 0.5rem /* 8px */;
+  width: 100%;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  background-color: var(--fallback-bc, oklch(var(--bc) / 0.1));
 }
 .range::-webkit-slider-thumb {
-    position: relative;
-    height: 1.5rem /* 24px */;
-    width: 1.5rem /* 24px */;
-    border-radius: var(--rounded-box, 1rem /* 16px */);
-    border-style: none;
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-    appearance: none;
-    -webkit-appearance: none;
-    top: 50%;
-    color:#4A9500;
-    transform: translateY(-50%);
-    --filler-size: 100rem /* 1600px */;
-    --filler-offset: 0.6rem /* 9.6px */;
-    box-shadow: 0 0 0 3px var(--range-shdw) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
+  position: relative;
+  height: 1.5rem /* 24px */;
+  width: 1.5rem /* 24px */;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  appearance: none;
+  -webkit-appearance: none;
+  top: 50%;
+  color: #4a9500;
+  transform: translateY(-50%);
+  --filler-size: 100rem /* 1600px */;
+  --filler-offset: 0.6rem /* 9.6px */;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0),
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
 .range::-moz-range-thumb {
-    position: relative;
-    height: 1.5rem /* 24px */;
-    width: 1.5rem /* 24px */;
-    border-radius: var(--rounded-box, 1rem /* 16px */);
-    border-style: none;
-    --tw-bg-opacity: 1;
-    background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
-    top: 50%;
-    color: #4A9500;
-    --filler-size: 100rem /* 1600px */;
-    --filler-offset: 0.5rem /* 8px */;
-    box-shadow: 0 0 0 3px var(--range-shdw) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-
+  position: relative;
+  height: 1.5rem /* 24px */;
+  width: 1.5rem /* 24px */;
+  border-radius: var(--rounded-box, 1rem /* 16px */);
+  border-style: none;
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-b1, oklch(var(--b1) / var(--tw-bg-opacity)));
+  top: 50%;
+  color: #4a9500;
+  --filler-size: 100rem /* 1600px */;
+  --filler-offset: 0.5rem /* 8px */;
+  box-shadow: 0 0 0 3px var(--range-shdw) inset, var(--focus-shadow, 0 0),
+    calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
 }
 
-.path{
-    clip-path: polygon(0 0, 89% 0, 100% 64%, 0 64%);
-
-
+.path {
+  clip-path: polygon(0 0, 89% 0, 100% 64%, 0 64%);
 }
+
+/* Hide the default radio button */
+.custom-radio input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #333;
+  border-radius: 50%;
+  position: relative;
+}
+
+.custom-radio input[type="radio"]::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #222222b0; /* Change this color */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Style the selected radio button */
+.custom-radio input[type="radio"]:checked::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fb5b21; /* Change this color */
+  color: #fb5b21;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <div class="custom-radio">
+    <label>
+        <input type="radio" name="option" />
+        Option 1
+    </label>
+    <label>
+        <input type="radio" name="option" />
+        Option 2
+    </label>
+</div> */

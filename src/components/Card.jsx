@@ -57,17 +57,17 @@ const Card = () => {
                 key={item.id}
                 className=" bg-base-100 w-72 h-32 shadow-2xl text-center my-6 rounded-xl "
               >
-                <div className="flex flex-col justify-center items-center">
-                  <div className="relative flex justify-center items-center ">
-                    <div className=" absolute -top-8  w-20 h-20 rounded-full bg-iconcol border-2 border-fborder flex justify-center items-center">
+                <div className="flex flex-col justify-center items-center ">
+                  <div className="relative flex justify-center items-center  ">
+                    <div className="absolute -top-8  w-20 h-20 rounded-full border-4 border-fborder  bg-iconcol flex justify-center items-center">
                       <div className="">
-                        <img className="" src={item.image} alt="" />
+                        <img className="p-3" src={item.image} alt="" />
                       </div>
                     </div>
                     <div className="absolute top-16">
                       <p className="block w-60 font-semibold">{item.title}</p>
                       <a
-                        className=" text-button underline font-medium"
+                        className=" text-buttonb underline font-medium"
                         href="#"
                       >
                         Try Calculator
