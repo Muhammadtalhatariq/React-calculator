@@ -115,13 +115,13 @@ const Calculator = () => {
                           name=""
                           id=""
                         >
-                          <div className="flex flex-nowrap gap-6">
+                          <div className="flex flex-nowrap gap-6 rounded-full shadow-2xl">
                             <div
                               value={activity}
                               onChange={(e) => {
                                 setactivity(e.target.value);
                               }}
-                              className=" rounded-full shadow-2xl outline-none p-2 font-semibold"
+                              className="  outline-none p-2 font-semibold"
                             >
                               Moderate Exercise 4-5 Times/Week
                             </div>
@@ -238,7 +238,7 @@ const Calculator = () => {
             </div>
           </div>
 
-          
+
         </div>
       </div>
     </>
