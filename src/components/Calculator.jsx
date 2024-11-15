@@ -26,12 +26,12 @@ const Calculator = () => {
               <li className="text-buttonb font-bold leading-6 cursor-pointer">
                 Metric Units
               </li>
-              <li className="text-buttonsec font-bold leading-6 cursor-pointer">
+              <li className="text-buttonsec  font-bold leading-6 cursor-pointer">
                 Other Units
               </li>
             </ul>
           </div>
-          <div className="relative mx-4  text-black bg-white">
+          <div className="relative mx-4 text-black bg-white">
             <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl bg-white ">
               <form onSubmit={handleSubmit} action="">
                 <div className="flex md:flex-nowrap flex-wrap  bg-white">
@@ -237,6 +237,8 @@ const Calculator = () => {
               </form>
             </div>
           </div>
+
+          
         </div>
       </div>
     </>
