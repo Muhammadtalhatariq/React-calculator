@@ -34,7 +34,6 @@ const Calculator = () => {
           <div className="relative mx-4 text-black bg-white  ">
             <div className="absolute -top-[50px] bg-white ">
               <form onSubmit={handleSubmit} action="">
-
                 <div className="flex md:flex-nowrap flex-wrap rounded-[43px] rounded-tl-none shadow-2xl bg-white">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
                     <div className="flex flex-col flex-wrap items-center gap-x-1 text-black mx-3 pt-8">
