@@ -111,17 +111,17 @@ const Calculator = () => {
                       <div className="flex flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
                         <div
-                          className=" outline-none  md:w-[320px] p-3 font-semibold "
+                          className=" outline-none  md:w-[320px] p-2 font-semibold "
                           name=""
                           id=""
                         >
-                          <div className="flex flex-nowrap gap-6 rounded-full shadow-2xl">
+                          <div className="flex flex-nowrap gap-6 rounded-full shadow-2xl px-1">
                             <div
                               value={activity}
                               onChange={(e) => {
                                 setactivity(e.target.value);
                               }}
-                              className="  outline-none p-2 font-semibold"
+                              className=" outline-none p-2 font-medium"
                             >
                               Moderate Exercise 4-5 Times/Week
                             </div>
