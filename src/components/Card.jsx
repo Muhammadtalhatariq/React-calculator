@@ -44,6 +44,7 @@ const cart = [
 ];
 
 const Card = () => {
+  
   return (
     <>
       <div className="flex justify-center items-center flex-col my-20 md:mt-80 mt-[50rem]">
