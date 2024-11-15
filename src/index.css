@@ -8,8 +8,6 @@ body {
   font-family: "Kumbh Sans", sans-serif;
 }
 
-
-
 .path {
   clip-path: polygon(0 0, 89% 0, 100% 64%, 0 64%);
 }
