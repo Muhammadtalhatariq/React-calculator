@@ -16,9 +16,9 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="md:mx-20 mx-8  mb-20 bg-white">
-        <div className="w-full bg-white">
-          <div className="flex relative rounded-[40px] text-black shadow-xl bg-white">
+      <div className="md:mx-20 mx-8 mb-20 bg-white ">
+        <div className="w-full bg-red-500">
+          <div className="flex relative rounded-[47px] text-black border-6 border-red-600 shadow-xl bg-white">
             <ul className=" absolute -top-20 flex gap-16 bg-white p-3 mx-4 px-10 md:w-[550px] rounded-xl shadow-xl path h-20">
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Us Units
@@ -31,10 +31,11 @@ const Calculator = () => {
               </li>
             </ul>
           </div>
-          <div className="relative mx-4 text-black bg-white">
-            <div className="  absolute -top-[50px] rounded-[40px] rounded-tl-none shadow-xl bg-white ">
+          <div className="relative mx-4 text-black bg-white  ">
+            <div className="absolute -top-[50px] bg-white ">
               <form onSubmit={handleSubmit} action="">
-                <div className="flex md:flex-nowrap flex-wrap  bg-white">
+
+                <div className="flex md:flex-nowrap flex-wrap rounded-[43px] rounded-tl-none shadow-2xl bg-white">
                   <div className="flex flex-wrap text-sm gap-x-2 md:w-[680px] mx-8">
                     <div className="flex flex-col flex-wrap items-center gap-x-1 text-black mx-3 pt-8">
                       <div className="flex justify-between md:w-72  ">
@@ -111,7 +112,7 @@ const Calculator = () => {
                       <div className="flex flex-col justify-between md:w-72  ">
                         <span className="text-lg font-bold ">Activity</span>{" "}
                         <div
-                          className=" outline-none  md:w-[320px] p-2 font-semibold "
+                          className=" outline-none  md:w-[320px] p-3 font-semibold "
                           name=""
                           id=""
                         >
@@ -121,7 +122,7 @@ const Calculator = () => {
                               onChange={(e) => {
                                 setactivity(e.target.value);
                               }}
-                              className=" outline-none p-2 font-medium"
+                              className=" outline-none  font-medium"
                             >
                               Moderate Exercise 4-5 Times/Week
                             </div>
@@ -234,11 +235,10 @@ const Calculator = () => {
                     </div>
                   </div>
                 </div>
+
               </form>
             </div>
           </div>
-
-
         </div>
       </div>
     </>
