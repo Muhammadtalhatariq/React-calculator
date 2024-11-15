@@ -18,7 +18,7 @@ const Calculator = () => {
     <>
       <div className="md:mx-20  mx-8  mb-20 bg-white">
         <div className="w-full  ">
-          <div className="flex relative rounded-[40px] text-black shadow-xl ">
+          <div className="flex relative rounded-[40px] text-black shadow-xl bg-white">
             <ul className=" absolute -top-20 flex gap-16 p-3 mx-4 px-10 md:w-[550px] rounded-xl shadow-xl path h-20">
               <li className="text-buttonsec font-bold leading-6 cursor-pointer">
                 Us Units
